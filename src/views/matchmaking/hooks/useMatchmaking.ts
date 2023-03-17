@@ -1,8 +1,7 @@
-import { MatchingType } from "../../interfaces/homepage/MatchingType";
+import { MatchingType } from "../../../interfaces/matchmaking/MatchingType";
 import { ref } from "vue";
 
-export const useHomepage = () => {
-  const textTest = "hello";
+export const useMatchmaking = () => {
   const matchingList = ref<MatchingType[]>([
     {
       roomId: "room1",
@@ -29,9 +28,7 @@ export const useHomepage = () => {
       currentMember: 5,
     },
   ]);
-  const handleClickButton = () => {
-    return alert(textTest);
-  };
 
-  return { textTest, matchingList, handleClickButton };
+
+  return {  matchingList};
 };

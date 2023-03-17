@@ -8,7 +8,7 @@
 </template>
 <script setup lang="ts">
 import MatchingItemComponent from "../components/MatchingItem.vue";
-import { MatchingType } from "../../../interfaces/homepage/MatchingType";
+import { MatchingType } from "../../../interfaces/matchmaking/MatchingType";
 import { defineProps } from "vue";
 
 const props = defineProps({
@@ -25,7 +25,7 @@ console.log(props.data);
     width: 100%;
     margin: 1rem 0 ;
 }
-@media (min-width:380px) {
+@media (min-width:390px) {
     .room-content{
         width: 48%;
         margin: 1rem 0 ;

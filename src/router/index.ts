@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 import HelloWorldVue from '../components/HelloWorld.vue'
-import { homepage } from '../router/homepage/index'
+import { announcement } from '../router/announcement/index'
+import { matchmaking } from './matchmaking'
 
 const routes = [
     {
@@ -9,7 +10,8 @@ const routes = [
         component: HelloWorldVue,
        
     },
-    ...homepage
+    ...announcement,
+    ...matchmaking
 ]
 
 const router = createRouter({

@@ -6,6 +6,7 @@ import {
   ActionBarButton,
   ActionBarIcon,
   Button,
+  Divider,
   NavBar,
   PullRefresh,
   Swipe,
@@ -22,6 +23,7 @@ app.use(ActionBar);
 app.use(ActionBarIcon);
 app.use(ActionBarButton);
 app.use(Button);
+app.use(Divider);
 app.use(NavBar);
 app.use(PullRefresh);
 app.use(Swipe);

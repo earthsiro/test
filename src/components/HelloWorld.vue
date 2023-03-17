@@ -6,7 +6,7 @@ defineProps<{ msg: string }>();
 
 const router = useRouter();
 const handleClickHomePage = (): void => {
-  router.push("/homepage");
+  router.push("/announcement");
 };
 const count = ref(0);
 </script>
@@ -36,7 +36,7 @@ const count = ref(0);
   <p class="read-the-docs">Click on the Vite and Vue logos to learn more</p>
 
   <van-button type="primary" round @click="handleClickHomePage"
-    >homepage</van-button
+    >Announcement</van-button
   >
 </template>
 
